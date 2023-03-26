@@ -1,0 +1,29 @@
+.metaData {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.publishedLabel {
+    display: none;
+}
+
+.createdAt,
+.createdAt span {
+    color: var(--grey99);
+}
+
+@media all and (min-width: 1024px) {
+    .metaData {
+        flex-flow: row-reverse nowrap;
+        justify-content: flex-end;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .publishedLabel {
+        display: inline;
+    }
+}
